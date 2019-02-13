@@ -67,16 +67,14 @@ def all_supplies_in_holidays(holiday_hash)
 
       holiday.each do |holiday, supply|
         holiday_string = []
-        holiday_and_supplies =[]
+        supplies_list =[]
         holiday_string << holiday.to_s.split("_")
         holiday_string.flatten!
           holiday_string.each do |item|
             item.capitalize!
-          end
-        holiday_and_supplies << holiday_string.join(" ")
-        holiday_and_supplies << ":"
-        puts "  #{holiday_and_supplies.join(" ")}"
-              end
+          end  
+        puts "  #{holiday_string.join(" ")}: #{supply.join(", ")}"
+      end
 
   end
   #        item.each do |unit|

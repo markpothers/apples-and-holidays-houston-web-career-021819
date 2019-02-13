@@ -68,7 +68,6 @@ def all_supplies_in_holidays(holiday_hash)
       holiday.each do |holiday, supply|
         holiday_string = []
         holiday_string << holiday.to_s.split("_")
-          holiday_string.flatten!
           x = 0
           holiday_string.each do |item|
             item[x].capitalize!

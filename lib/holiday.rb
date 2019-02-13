@@ -72,7 +72,7 @@ def all_supplies_in_holidays(holiday_hash)
         holiday_string.flatten!
           holiday_string.each do |item|
             item.capitalize!
-          end  
+          end
         puts "  #{holiday_string.join(" ")}: #{supply.join(", ")}"
       end
 

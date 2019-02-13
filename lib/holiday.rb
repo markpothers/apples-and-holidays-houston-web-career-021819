@@ -87,7 +87,7 @@ bbqs = []
       holiday.each do |holiday, supply|
           supply.any? do |item|
             if item == "BBQ"
-              BBQ_hols << holiday
+              bbqs << holiday
             end
           end
       end
